@@ -17,3 +17,13 @@
 - wait for tests to show up "green"
 - merge PR
 - see changes appear on prod
+
+## Install SSL Certificate
+- https://github.com/jetstack/cert-manager
+- follow instructions to install cert-manager with Helm
+- create issuer.yaml file
+- create certificate.yaml file
+- push changes
+- kubectl get certificates
+- kubectl describe certificates
+- kubectl get secrets (there should be a new secret containing the certificate)
