@@ -14,7 +14,7 @@ spec:
   acme:
     config:
       - http01:
-        incressClass: nginx
+          incressClass: nginx
         domains:
           - dvcloud.xyz
           - www.dvcloud.xyz
