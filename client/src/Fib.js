@@ -31,10 +31,13 @@ class Fib extends Component {
     await axios.post('/api/values', {
       index: this.state.index
     });
-    this.setState({ index: [] });
+    this.setState({ index: '' });
   };
 
   renderSeenIndexes() {
+    if (!this.state.seenIndexes) {
+      this.state.seenIndexes = []
+    }
     return this.state.seenIndexes.map(({ number }) => number).join(', ');
   }
 
